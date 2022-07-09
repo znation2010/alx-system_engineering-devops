@@ -1,3 +1,1 @@
-#shell variables expansions
-this is how we do
-** This is how shell variable expansions are applied**
+0 - alias => Create a script that creates an alias Name: ls Value: rm *
