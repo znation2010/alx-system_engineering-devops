@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#script that generates a MySQL dump
+DB_USER="root"
+DB_PASS="$1"
+FILE_NAME="backup.sql"
+DATE=$(date +"%d-%m-%Y")
+sudo mysqldump --user=$DB_USER --password=$DB_PASS --all-databases > $FILE_NAME # $BACKUP_DIR/$FILE_NAME
+sudo tar -czvf $DATE.tar.gz $FILE_NAME
